@@ -13,11 +13,7 @@ function signUp() {
     useContext(AuthContext);
   const submitHandler = async (e) => {
     e.preventDefault();
-    // if (password === reEnterPassword) {
-    //   setError(false);
-    // } else {
-    //   setError(true);
-    // }
+   
     await register(email, password, username);
   };
   useEffect(() => {
